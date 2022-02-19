@@ -1,0 +1,17 @@
+{
+  "name": "playwright_project",
+  "version": "1.0.0",
+  "description": "end-to-end testing with PlayWright",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:chrome": "npx playwright test --project=chromium",
+    "test:debug": " npx playwright test --debug",
+    "specificFile": "npx playwright test tests\\example.spec.js"
+  },
+  "author": "Maria Markel",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.19.1"
+  }
+}
