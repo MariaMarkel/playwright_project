@@ -9,7 +9,7 @@ test.beforeAll(async () => {
     const page = await context.newPage();
     await page.goto('https://amazon.com');
 });
-test.describe('Validate the name and price of item on amazon.com', () => {
+//test.describe('Validate the name and price of item on amazon.com', () => {
     test('1: go to amazon.com', async ({ page }) => {
         await expect(page).toHaveURL('https://www.amazon.com/');
     });
@@ -33,8 +33,8 @@ test.describe('Validate the name and price of item on amazon.com', () => {
     test.skip('4: verify the price of selected item', async ({ page }) => {
         await expect(page.locator('')).toHaveText('');
     });
-});
+//});
 test.afterAll(async () => {
-    await context.close();
-    await browser.close();
+    // await context.close();
+    // await browser.close();
 })
