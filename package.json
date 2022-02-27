@@ -4,14 +4,22 @@
   "description": "end-to-end testing with PlayWright",
   "main": "index.js",
   "scripts": {
-    "test": "npx playwright test",
+    "test": "playwright test",
+    "test:headed": "npx playwright test --headed",
     "test:chrome": "npx playwright test --project=chromium",
     "test:debug": " npx playwright test --debug",
-    "specificFile": "npx playwright test tests\\example.spec.js"
+    "amazonItem": "npx playwright test tests/amazonItem.spec.mjs",
+    "report": "npx playwright show-report"
   },
   "author": "Maria Markel",
   "license": "ISC",
   "devDependencies": {
     "@playwright/test": "^1.19.1"
+  },
+  "dependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.5",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/register": "^7.17.0"
   }
 }
