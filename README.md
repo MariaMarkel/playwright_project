@@ -1,4 +1,4 @@
-##End-to-end testing with PlayWright
+## End-to-end testing with PlayWright
 ### **To run all tests:**
 * Clone repository
 ```
