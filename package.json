@@ -9,6 +9,7 @@
     "test:chrome": "npx playwright test --project=chromium",
     "test:debug": " npx playwright test --debug",
     "amazonItem": "npx playwright test tests/amazonItem.spec.js",
+    "sandbox": "npx playwright test tests/sandbox.spec.js --headed",
     "report": "npx playwright show-report"
   },
   "author": "Maria Markel",

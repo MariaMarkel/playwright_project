@@ -43,8 +43,10 @@ test('3: verify the name of selected item', async ({page}) => {
     await expect(amazonMainPage.productTitle).toHaveText('        roswear Women\'s Essentials Ripped Mid Rise Destroyed Skinny Jeans       ');
 });
 
-test.skip('4: verify the price of selected item', async ({ page }) => {
-    await expect(page.locator('')).toHaveText('');
+test('4: verify the price of selected item', async ({ page }) => {
+    const amazonMainPage = new AmazonMainPage(page);
+    await expect(amazonMainPage.productPrice).toHaveText('$38.99');
+    console.log(amazonMainPage.productPrice);
 });
 test.afterEach(async () => {
     // await context.close(); //visible only within the hook

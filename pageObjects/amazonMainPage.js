@@ -11,6 +11,7 @@ exports.AmazonMainPage = class AmazonMainPage {
         this.submitButton = page.locator('[type="submit"]');
         this.firstItemInList = page.locator('img.s-image[data-image-index="1"]');
         this.productTitle = page.locator('#productTitle');
+        this.productPrice = page.locator('div#corePriceDisplay_desktop_feature_div>div>span>span.a-offscreen');
     }
 
     async goto() {
