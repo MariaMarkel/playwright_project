@@ -2,6 +2,7 @@
 //const { chromium } = require('playwright');
 const { test, chromium, expect } = require('@playwright/test');
 const  { AmazonMainPage }  = require('./../pageObjects/amazonMainPage');
+const { ProductPage } = require("../pageObjects/productPage");
 
 test.beforeEach(async ({ page }) => { //а ты уверена что хочешь не beforeAll?
      // const browser = await chromium.launch({ headless: false });
@@ -25,28 +26,28 @@ test('1: go to amazon.com', async ({page}) => {
 
 test('2: search for roswear jeans', async ({page}) => {
     const amazonMainPage = new AmazonMainPage(page);
+    //const productPage = new ProductPage(page);
     const input = await page.isVisible('input#twotabsearchtextbox');
     amazonMainPage.searchField.fill('roswear women jeans');
     amazonMainPage.submitButton.click();
 
     // amazonMainPage.firstItemInList.click();
     // await page.screenshot({path: `item.png`});
-    // console.log(amazonMainPage.productTitle)
-    // await expect(amazonMainPage.productTitle).toHaveText('        roswear Women\'s Essentials Ripped Mid Rise Destroyed Skinny Jeans       ');
+    // await expect(productPage.productTitle).toHaveText('        roswear Women\'s Essentials Ripped Mid Rise Destroyed Skinny Jeans       ');
 });
 
 test('3: verify the name of selected item', async ({page}) => {
     const amazonMainPage = new AmazonMainPage(page);
+    const productPage = new ProductPage(page);
     amazonMainPage.firstItemInList.click();
     await page.screenshot({path: `selectedItem.png`});
-    console.log(amazonMainPage.productTitle)
-    await expect(amazonMainPage.productTitle).toHaveText('        roswear Women\'s Essentials Ripped Mid Rise Destroyed Skinny Jeans       ');
+    await expect(productPage.productTitle).toHaveText('        roswear Women\'s Essentials Ripped Mid Rise Destroyed Skinny Jeans       ');
 });
 
 test('4: verify the price of selected item', async ({ page }) => {
-    const amazonMainPage = new AmazonMainPage(page);
-    await expect(amazonMainPage.productPrice).toHaveText('$38.99');
-    console.log(amazonMainPage.productPrice);
+    const productPage = new ProductPage(page);
+    await expect(productPage.productPrice).toHaveText('$38.99');
+    console.log(productPage.productPrice);
 });
 test.afterEach(async () => {
     // await context.close(); //visible only within the hook
