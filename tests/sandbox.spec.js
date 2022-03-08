@@ -11,7 +11,7 @@ test('testing e2e flow', async ({ page, context }) => {
     amazonMainPage.submitButton.click();
     await page.screenshot({ path: `list.png` });
     amazonMainPage.firstItemInList.click();
-    await expect(productPage.productTitle).toHaveText('roswear Women\'s Essentials Ripped Mid Rise Destroyed Skinny Jeans');
-    await expect(productPage.productPrice).toHaveText('$38.99');
+    await expect(productPage.productTitle).toContainText('roswear Women\'s Essentials Ripped Mid Rise Destroyed Skinny Jeans');
+    await expect(productPage.productPrice).toHaveText('$39.99');
     await context.tracing.stop({ path: 'trace.zip' });
 });
