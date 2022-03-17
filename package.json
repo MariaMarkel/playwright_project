@@ -8,7 +8,7 @@
     "test:headed": "npx playwright test --headed",
     "test:chrome": "npx playwright test --project=chromium",
     "test:debug": " npx playwright test --debug",
-    "amazonItem": "npx playwright test tests/amazonItem.spec.js",
+    "amazonItem": "npx playwright test tests/amazonItem.spec.js --headed",
     "sandbox": "npx playwright test tests/sandbox.spec.js --headed",
     "report": "npx playwright show-report",
     "viewTrace": "npx playwright show-trace newTrace.zip"
