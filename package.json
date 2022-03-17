@@ -10,7 +10,8 @@
     "test:debug": " npx playwright test --debug",
     "amazonItem": "npx playwright test tests/amazonItem.spec.js",
     "sandbox": "npx playwright test tests/sandbox.spec.js --headed",
-    "report": "npx playwright show-report"
+    "report": "npx playwright show-report",
+    "viewTrace": "npx playwright show-trace newTrace.zip"
   },
   "author": "Maria Markel",
   "license": "ISC",
