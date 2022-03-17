@@ -23,6 +23,7 @@ test('2: search for roswear jeans', async () => {
     const amazonMainPage = new AmazonMainPage(page);
     const input = await page.isVisible('input#twotabsearchtextbox');
     amazonMainPage.searchField.fill('roswear women jeans');
+    //amazonMainPage.searchField.press('Enter'); // why is this not working??
     amazonMainPage.submitButton.click();
 });
 

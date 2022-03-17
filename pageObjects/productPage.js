@@ -9,9 +9,14 @@ exports.ProductPage = class ProductPage {
         this.page = page;
         this.productTitle = page.locator('#productTitle');
         this.productPrice = page.locator('div#corePriceDisplay_desktop_feature_div>div>span>span.a-offscreen');
+        this.appleMagicMouse = page.locator('h2 a[href*="Apple-Magic-Mouse-Wireless-Rechargable"]');
+        this.addToCartButton = page.locator('#add-to-cart-button');
+        this.noThanksButton = page.locator('#attachSiNoCoverage');
+        this.addedToCartNotification = page.locator('#attachDisplayAddBaseAlert');
     }
 
-    async someMethod() {
-        await this.page.goto('https://amazon.com');
+    async addToCart() {
+        await this.addToCart.click();
+        await this.noThanksButton.click();
     }
 }
