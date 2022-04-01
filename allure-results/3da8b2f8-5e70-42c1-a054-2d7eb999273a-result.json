@@ -1,0 +1,127 @@
+{
+    "uuid": "3da8b2f8-5e70-42c1-a054-2d7eb999273a",
+    "historyId": "chromium purchaseWorkflow.spec.js 3: select Apple computer mouse",
+    "status": "failed",
+    "statusDetails": {
+        "message": "locator.click: Target closed\n=========================== logs ===========================\nwaiting for selector \"ul.a-unordered-list.a-nostyle.a-vertical.a-spacing-medium>li:nth-child(6) >> nth=2\"\n============================================================",
+        "trace": "locator.click: Target closed\n=========================== logs ===========================\nwaiting for selector \"ul.a-unordered-list.a-nostyle.a-vertical.a-spacing-medium>li:nth-child(6) >> nth=2\"\n============================================================\n    at C:\\Users\\maria\\WebstormProjects\\playwright_project\\tests\\purchaseWorkflow.spec.js:33:41\n    at C:\\Users\\maria\\WebstormProjects\\playwright_project\\node_modules\\@playwright\\test\\lib\\workerRunner.js:373:13\n    at TestInfoImpl._runFn (C:\\Users\\maria\\WebstormProjects\\playwright_project\\node_modules\\@playwright\\test\\lib\\testInfo.js:164:7)\n    at WorkerRunner._runTestWithBeforeHooks (C:\\Users\\maria\\WebstormProjects\\playwright_project\\node_modules\\@playwright\\test\\lib\\workerRunner.js:348:24)\n    at TestInfoImpl._runWithTimeout (C:\\Users\\maria\\WebstormProjects\\playwright_project\\node_modules\\@playwright\\test\\lib\\testInfo.js:152:7)\n    at WorkerRunner._runTestOrAllHook (C:\\Users\\maria\\WebstormProjects\\playwright_project\\node_modules\\@playwright\\test\\lib\\workerRunner.js:308:5)\n    at WorkerRunner._runSuite (C:\\Users\\maria\\WebstormProjects\\playwright_project\\node_modules\\@playwright\\test\\lib\\workerRunner.js:221:43)\n    at WorkerRunner.run (C:\\Users\\maria\\WebstormProjects\\playwright_project\\node_modules\\@playwright\\test\\lib\\workerRunner.js:163:9)\n    at process.<anonymous> (C:\\Users\\maria\\WebstormProjects\\playwright_project\\node_modules\\@playwright\\test\\lib\\worker.js:94:5)"
+    },
+    "stage": "pending",
+    "steps": [
+        {
+            "status": "passed",
+            "statusDetails": {},
+            "stage": "pending",
+            "steps": [
+                {
+                    "status": "passed",
+                    "statusDetails": {},
+                    "stage": "pending",
+                    "steps": [],
+                    "attachments": [],
+                    "parameters": [],
+                    "start": 1648305842158,
+                    "name": "browserContext.newPage",
+                    "stop": 1648305842425
+                },
+                {
+                    "status": "passed",
+                    "statusDetails": {},
+                    "stage": "pending",
+                    "steps": [],
+                    "attachments": [],
+                    "parameters": [],
+                    "start": 1648305842428,
+                    "name": "page.goto(https://amazon.com)",
+                    "stop": 1648305844360
+                }
+            ],
+            "attachments": [],
+            "parameters": [],
+            "start": 1648305840840,
+            "name": "Before Hooks",
+            "stop": 1648305844360
+        },
+        {
+            "status": "failed",
+            "statusDetails": {},
+            "stage": "pending",
+            "steps": [],
+            "attachments": [],
+            "parameters": [],
+            "start": 1648305844361,
+            "name": "locator.click(ul.a-unordered-list.a-nostyle.a-vertical.a-spacing-medium>li:nth-child(6) >> nth=2)",
+            "stop": 1648305845030
+        },
+        {
+            "status": "failed",
+            "statusDetails": {},
+            "stage": "pending",
+            "steps": [],
+            "attachments": [],
+            "parameters": [],
+            "start": 1648305844362,
+            "name": "locator.click(h2 a[href*=\"Apple-Magic-Mouse-Wireless-Rechargable\"])",
+            "stop": 1648305845031
+        },
+        {
+            "status": "passed",
+            "statusDetails": {},
+            "stage": "pending",
+            "steps": [],
+            "attachments": [],
+            "parameters": [],
+            "start": 1648305844362,
+            "name": "page.screenshot",
+            "stop": 1648305844922
+        },
+        {
+            "status": "passed",
+            "statusDetails": {},
+            "stage": "pending",
+            "steps": [
+                {
+                    "status": "passed",
+                    "statusDetails": {},
+                    "stage": "pending",
+                    "steps": [],
+                    "attachments": [],
+                    "parameters": [],
+                    "start": 1648305844937,
+                    "name": "browserContext.close",
+                    "stop": 1648305845046
+                }
+            ],
+            "attachments": [],
+            "parameters": [],
+            "start": 1648305844934,
+            "name": "After Hooks",
+            "stop": 1648305845047
+        }
+    ],
+    "attachments": [],
+    "parameters": [],
+    "labels": [
+        {
+            "name": "language",
+            "value": "JavaScript"
+        },
+        {
+            "name": "framework",
+            "value": "Playwright"
+        },
+        {
+            "name": "parentSuite",
+            "value": "chromium"
+        },
+        {
+            "name": "suite",
+            "value": "purchaseWorkflow.spec.js"
+        }
+    ],
+    "links": [],
+    "start": 1648305840839,
+    "name": "3: select Apple computer mouse",
+    "fullName": "3: select Apple computer mouse",
+    "stop": 1648305845030
+}
