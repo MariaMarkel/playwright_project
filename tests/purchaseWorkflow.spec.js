@@ -6,7 +6,7 @@ const { ProductPage } = require("../pageObjects/productPage");
 
 let context;
 test.beforeAll(async ({browser}) => {
-    context = await browser.newContext({ recordVideo: { dir: 'videos/firstVideo' } });
+    context = await browser.newContext({ recordVideo: { dir: 'videos/firstVideo' } }); //I want to record a video!
 });
 
 test.beforeEach(async ({ page }) => {
@@ -52,5 +52,5 @@ test.fixme('4: add Apple computer mouse to cart', async ({ page }) => {
 });
 
 test.afterAll(async () => {
-    await context.close();
+    await context.close(); //Used context for video recording
 })
