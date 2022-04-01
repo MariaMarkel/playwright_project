@@ -1,4 +1,5 @@
 const { expect } = require('@playwright/test');
+const { AmazonMainPage } = require('./../pageObjects/amazonMainPage');
 
 exports.ProductPage = class ProductPage {
 
@@ -15,8 +16,14 @@ exports.ProductPage = class ProductPage {
         this.addedToCartNotification = page.locator('#attachDisplayAddBaseAlert');
     }
 
+    async selectMagicMouse(page) {
+        const amazonMainPage = new AmazonMainPage(page);
+        await amazonMainPage.appleCheckbox.click();
+        await this.appleMagicMouse.click();
+    }
+
     async addToCart() {
-        await this.addToCart.click();
-        await this.noThanksButton.click();
+        await this.addToCartButton.click();
+        await this.noThanksButton.click(); //there is no button when running this -> this can be deleted
     }
 }

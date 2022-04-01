@@ -16,17 +16,18 @@ exports.AmazonMainPage = class AmazonMainPage {
         this.seeAllDepartmentsDropdown = page.locator('.nav-sprite.hmenu-arrow-more');
         this.computersDropdown = page.locator('[data-menu-id="16"]');
         this.computersCategories = page.locator('ul[data-menu-id="16"]>li');
-        this.appleCheckbox = page.locator('ul.a-unordered-list.a-nostyle.a-vertical.a-spacing-medium>li:nth-child(6)');
+        this.appleCheckbox = page.locator('div.a-section.a-spacing-none>ul>li >> "Apple"');
     }
 
     async goto() {
-        await this.page.goto('https://amazon.com');
+        await this.page.goto('/');
     }
-    async selectAppleMouse() {
+
+    async gotoComputerAccessoriesPage(department, category) {
         await this.allDropdown.click();
-        await this.seeAllDepartmentsDropdown.click();
-        await this.computersDropdown.click();
-        await this.accessoriesDropdown.click();
+        await this.seeAllDepartmentsDropdown.first().click();
+        await this.computersDropdown.nth(department).click(); //clicking Computers
+        await this.computersCategories.nth(category).click(); //clicking Accessories
     }
 }
 
