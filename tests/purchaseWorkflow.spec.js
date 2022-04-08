@@ -1,4 +1,3 @@
-// @ts-check
 const { test, expect } = require('@playwright/test');
 const { AmazonMainPage } = require('./../pageObjects/amazonMainPage');
 const { ProductPage } = require("../pageObjects/productPage");
@@ -32,7 +31,7 @@ test('3: select Apple computer mouse', async ({ page }) => {
     const productPage = new ProductPage(page);
     await amazonMainPage.gotoComputerAccessoriesPage(0, 4);
     await productPage.selectMagicMouse(page);
-    await expect(productPage.addToCartButton).toBeVisible;
+    expect(productPage.addToCartButton).toBeVisible;
 });
 
 test('4: add Apple computer mouse to cart', async ({ page }) => {
@@ -42,7 +41,7 @@ test('4: add Apple computer mouse to cart', async ({ page }) => {
     await productPage.selectMagicMouse(page);
     //productPage.addToCart(); // why is this not working?
     await productPage.addToCartButton.click();
-    await expect(productPage.addedToCartNotification).toBeVisible;
+    expect(productPage.addedToCartNotification).toBeVisible;
 });
 
 test.afterAll(async () => {

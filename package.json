@@ -9,16 +9,10 @@
     "test:chrome": "npx playwright test --project=chromium",
     "test:debug": " npx playwright test --debug",
     "amazonItem": "npx playwright test tests/amazonItem.spec.js --headed",
-<<<<<<< HEAD
-    "sandbox": "npx playwright test tests/sandbox.spec.js --headed",
-    "report": "npx playwright show-report",
-    "viewTrace": "npx playwright show-trace trace.zip"
-=======
     "purchaseWorkflow": "npx playwright test tests/purchaseWorkflow.spec.js",
     "sandbox": "npx playwright test tests/sandbox.spec.js --headed",
     "report": "npx playwright show-report",
     "viewTrace": "npx playwright show-trace newTrace.zip"
->>>>>>> productPage
   },
   "author": "Maria Markel",
   "license": "ISC",
