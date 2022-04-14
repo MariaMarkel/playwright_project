@@ -45,7 +45,7 @@ test.fixme('test 5: client delay', async ({page})  => {
     //await page.screenshot({ path: 'test-results/clientDelay.png' });
 });
 
-test.only('test 6: dynamic table', async ({page})  => {
+test('test 6: dynamic table', async ({page})  => {
     // cy.visit('http://uitestingplayground.com/dynamictable');
     // const homePage = new HomePage();
     // let cpuColumnIndex;
@@ -84,15 +84,45 @@ test.only('test 6: dynamic table', async ({page})  => {
     let allCPUs;
     let chromeCPU;
     let browserNamesArray = await page.$$('[role="row"]>span:nth-child(1)');
-    browserNamesArray.forEach((el, i) => {        //uiTestingPlaygroundPage.browserNamesArray
-            // if (el.innerText() === 'Chrome') {
+    let columnNamesArray = await page.$$('[role="columnheader"]');
+    let browser;
+    let columnName;
+    //browserNamesArray.forEach((el, i) => {        //uiTestingPlaygroundPage.browserNamesArray IS NOT WORKING
+            // if (el.innerText() === 'Chrome') {   // forEach() IS NOT WORKING
             //     chromeRowIndex = i;
             //     console.log("*****************chromeRowIndex "+ chromeRowIndex);
             // }
-            //console.log(el); //(await this._elementChannel.innerText()).value;
+            // console.log(el); //(await this._elementChannel.innerText()).value;
 
-            console.log(el.innerText);
-            });
+        //     console.log(el.innerText);
+        //    });
+
+    for (let i = 1; i < browserNamesArray.length; i++) {
+            browser = await page.locator('[role="row"]>span:nth-child(1)').nth(i).textContent();
+                if (browser === 'Chrome') {
+                chromeRowIndex = i;
+            }
+        }
+
+    for (let i = 0; i < columnNamesArray.length; i++) {
+        columnName = await page.locator('[role="columnheader"]').nth(i).textContent();
+        if (columnName === 'CPU') {
+                    cpuColumnIndex = i;           
+                }
+        }
+    allCPUs = await page.$$(`[role="row"]>span:nth-child(${cpuColumnIndex+1})`);     //CPU column elements = array
+    //console.log("################### " + allCPUs.length)
+
+    for(let i = 0; i < allCPUs.length; i++) {
+        let cpuValue = await page.locator(`[role="row"]>span:nth-child(${cpuColumnIndex+1})`).nth(i).textContent();
+        cpuPercentArray.push(cpuValue);
+        }
+
+    chromeCPU = cpuPercentArray[chromeRowIndex];
+    //console.log("############### " + chromeCPU);
+    //expect( await uiTestingPlaygroundPage.chromeCPUmessage).toBeVisible();
+    expect( await uiTestingPlaygroundPage.chromeCPUmessage).toContainText(chromeCPU);
+    await page.screenshot({ path: 'test-results/CPU.png' });
 });
 
 test('test 7: click', async ({page})  => {
@@ -127,4 +157,54 @@ test('test 10: overlapped element', async ({page})  => {
     await uiTestingPlaygroundPage.gotoOverlappedElement();
     await uiTestingPlaygroundPage.scrollAndFillUpName(data.name);
     //await page.screenshot({ path: 'test-results/overlapped.png' });
+});
+
+test.describe('test 11: visibility', ()  => {
+    test.beforeEach(async ({page}) => {
+        const uiTestingPlaygroundPage = new UItestingPlaygroundPage(page);
+        await uiTestingPlaygroundPage.gotoVisibility();
+        await uiTestingPlaygroundPage.hideBtn.click();
+    });
+    
+    test('1: opacity0', async({page}) => {
+        const uiTestingPlaygroundPage = new UItestingPlaygroundPage(page);
+        expect(await uiTestingPlaygroundPage.opacity0Btn).toBeVisible(); //visible
+        await page.screenshot({ path: 'test-results/overlapped1.png' });
+    });
+    
+    test('2: removed button', async({page}) => {
+        const uiTestingPlaygroundPage = new UItestingPlaygroundPage(page);
+        expect(await uiTestingPlaygroundPage.removedBtn).toBeVisible(); //not
+        await page.screenshot({ path: 'test-results/overlapped2.png' });
+    });
+
+    test('3: visibility hidden btn', async({page}) => {
+        const uiTestingPlaygroundPage = new UItestingPlaygroundPage(page);
+        expect(await uiTestingPlaygroundPage.visibilityHiddenBtn).toBeVisible(); //not 
+        await page.screenshot({ path: 'test-results/overlapped3.png' });
+    });
+    
+    test('4: zero width btn', async({page}) => {
+        const uiTestingPlaygroundPage = new UItestingPlaygroundPage(page);
+        expect(await uiTestingPlaygroundPage.zeroWidthBtn).toBeVisible(); //not
+        await page.screenshot({ path: 'test-results/overlapped4.png' });
+    });
+
+    test('5: display none btn', async({page}) => {
+        const uiTestingPlaygroundPage = new UItestingPlaygroundPage(page);
+        expect(await uiTestingPlaygroundPage.displayNoneBtn).toBeVisible(); //not
+        await page.screenshot({ path: 'test-results/overlapped5.png' });
+    });
+
+    test('6: overlapped btn', async({page}) => {
+        const uiTestingPlaygroundPage = new UItestingPlaygroundPage(page);
+        expect(await uiTestingPlaygroundPage.overlappedBtn).toBeVisible(); //visible
+        await page.screenshot({ path: 'test-results/overlapped6.png' });
+    });
+    
+    test('7: offscreen btn', async({page}) => {
+        const uiTestingPlaygroundPage = new UItestingPlaygroundPage(page);
+        expect(await uiTestingPlaygroundPage.offscreenBtn).toBeVisible(); //visible
+        await page.screenshot({ path: 'test-results/overlapped7.png' });
+    });  
 });
