@@ -4,5 +4,8 @@
     "brandName": "roswear Women's Essentials Ripped Mid Rise Destroyed Skinny Jeans",
     "productPrice": "$39.99",
     "computer": "Computers" ,
-    "name": "Superman"
+    "name": "Superman",
+    "password": "pwd",
+    "welcome": "Welcome, ",
+    "invalidCredentials": "Invalid username/password"
 }

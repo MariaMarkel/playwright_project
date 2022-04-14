@@ -208,3 +208,11 @@ test.describe('test 11: visibility', ()  => {
         await page.screenshot({ path: 'test-results/overlapped7.png' });
     });  
 });
+
+test('test 12: sample app', async ({page})  => {
+    const uiTestingPlaygroundPage = new UItestingPlaygroundPage(page);
+    await uiTestingPlaygroundPage.gotoSampleApp();
+    await uiTestingPlaygroundPage.sampleAppLogin(data.name, data.password); //WHY PRESSING ENTER NOT WORKING?
+    await page.screenshot({ path: 'test-results/sampleApp.png' });
+    expect(await uiTestingPlaygroundPage.loginStatusMessage.innerText()).toBe(data.welcome + `${data.name}!`); //WHY toContainText() DIDNT WORK?
+});

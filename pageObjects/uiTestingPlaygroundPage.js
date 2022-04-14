@@ -31,6 +31,10 @@ exports.UItestingPlaygroundPage = class UItestingPlaygroundPage {
         this.displayNoneBtn = page.locator('#notdisplayedButton');
         this.overlappedBtn = page.locator('#overlappedButton');
         this.offscreenBtn = page.locator('#offscreenButton');
+        this.sampleAppNameInputField = page.locator('input[name="UserName"]');
+        this.sampleAppPswInputField = page.locator('input[name="Password"]');
+        this.loginStatusMessage = page.locator('#loginstatus');
+        this.sampleAppLoginBtn = page.locator('#login');
     }
 
     async gotoHome() {
@@ -69,6 +73,9 @@ exports.UItestingPlaygroundPage = class UItestingPlaygroundPage {
     async gotoVisibility() {
         await this.page.goto('http://uitestingplayground.com/visibility');
     }
+    async gotoSampleApp() {
+        await this.page.goto('http://uitestingplayground.com/sampleapp');
+    }
 
     async clickBtnWithDynamicId() {
         await this.btnWithDynamicId.click();
@@ -96,5 +103,12 @@ exports.UItestingPlaygroundPage = class UItestingPlaygroundPage {
     async scrollAndFillUpName(name) {
         await this.nameInputField.scrollIntoViewIfNeeded(2000);
         await this.nameInputField.fill(name);
+    }
+    async sampleAppLogin(name, password) {
+        await this.sampleAppNameInputField.fill(name);
+        await this.sampleAppPswInputField.fill(password);
+        //await this.sampleAppNameInputField.press('Enter'); // NOT WORKING
+        await this.sampleAppLoginBtn.click();
+        await this.page.waitForTimeout(3000)
     }
 }
