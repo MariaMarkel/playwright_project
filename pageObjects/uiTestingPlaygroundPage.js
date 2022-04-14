@@ -35,6 +35,7 @@ exports.UItestingPlaygroundPage = class UItestingPlaygroundPage {
         this.sampleAppPswInputField = page.locator('input[name="Password"]');
         this.loginStatusMessage = page.locator('#loginstatus');
         this.sampleAppLoginBtn = page.locator('#login');
+        this.welcomeUserNameMessage = page.locator('//span[normalize-space(.)="Welcome UserName!"]');
     }
 
     async gotoHome() {
@@ -76,6 +77,9 @@ exports.UItestingPlaygroundPage = class UItestingPlaygroundPage {
     async gotoSampleApp() {
         await this.page.goto('http://uitestingplayground.com/sampleapp');
     }
+    async gotoVerifyText() {
+        await this.page.goto('http://uitestingplayground.com/verifytext');
+    }
 
     async clickBtnWithDynamicId() {
         await this.btnWithDynamicId.click();
@@ -109,6 +113,5 @@ exports.UItestingPlaygroundPage = class UItestingPlaygroundPage {
         await this.sampleAppPswInputField.fill(password);
         //await this.sampleAppNameInputField.press('Enter'); // NOT WORKING
         await this.sampleAppLoginBtn.click();
-        await this.page.waitForTimeout(3000)
     }
 }

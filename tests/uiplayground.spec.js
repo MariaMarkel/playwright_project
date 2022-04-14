@@ -216,3 +216,10 @@ test('test 12: sample app', async ({page})  => {
     await page.screenshot({ path: 'test-results/sampleApp.png' });
     expect(await uiTestingPlaygroundPage.loginStatusMessage.innerText()).toBe(data.welcome + `${data.name}!`); //WHY toContainText() DIDNT WORK?
 });
+
+test('test 13: verify text', async ({page})  => {
+    const uiTestingPlaygroundPage = new UItestingPlaygroundPage(page);
+    await uiTestingPlaygroundPage.gotoVerifyText();
+    expect(await uiTestingPlaygroundPage.welcomeUserNameMessage).toContainText(data.welcomeText);
+    await page.screenshot({ path: 'test-results/verifytext.png' });
+});
