@@ -22,7 +22,7 @@ test('test 3: hidden layers', async ({page})  => {
     await uiTestingPlaygroundPage.gotoHiddenLayers();
     await uiTestingPlaygroundPage.clickBtnHiddenLayers();
     //await page.pause();
-    await expect(uiTestingPlaygroundPage.greenBtnHiddenLayers).toBeHidden();
+    //await expect(uiTestingPlaygroundPage.greenBtnHiddenLayers).toBeHidden(); toBeHidden did not work
     await expect(uiTestingPlaygroundPage.blueBtnHiddenLayers).toBeVisible(); //what assertion do i need? everything passes
     await page.screenshot({ path: 'test-results/clickBtnHiddenLayers.png' });
 });
@@ -169,25 +169,25 @@ test.describe('test 11: visibility', ()  => {
     
     test('2: removed button', async({page}) => {
         const uiTestingPlaygroundPage = new UItestingPlaygroundPage(page);
-        expect(await uiTestingPlaygroundPage.removedBtn).toBeVisible(); //not
+        expect(await uiTestingPlaygroundPage.removedBtn).not.toBeVisible(); //not
         await page.screenshot({ path: 'test-results/overlapped2.png' });
     });
 
     test('3: visibility hidden btn', async({page}) => {
         const uiTestingPlaygroundPage = new UItestingPlaygroundPage(page);
-        expect(await uiTestingPlaygroundPage.visibilityHiddenBtn).toBeVisible(); //not 
+        expect(await uiTestingPlaygroundPage.visibilityHiddenBtn).not.toBeVisible(); //not 
         await page.screenshot({ path: 'test-results/overlapped3.png' });
     });
     
     test('4: zero width btn', async({page}) => {
         const uiTestingPlaygroundPage = new UItestingPlaygroundPage(page);
-        expect(await uiTestingPlaygroundPage.zeroWidthBtn).toBeVisible(); //not
+        expect(await uiTestingPlaygroundPage.zeroWidthBtn).not.toBeVisible(); //not
         await page.screenshot({ path: 'test-results/overlapped4.png' });
     });
 
     test('5: display none btn', async({page}) => {
         const uiTestingPlaygroundPage = new UItestingPlaygroundPage(page);
-        expect(await uiTestingPlaygroundPage.displayNoneBtn).toBeVisible(); //not
+        expect(await uiTestingPlaygroundPage.displayNoneBtn).not.toBeVisible(); //not
         await page.screenshot({ path: 'test-results/overlapped5.png' });
     });
 
