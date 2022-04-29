@@ -7,4 +7,4 @@ git clone git@github.com:MariaMarkel/playwright_project.git
 
 ```
 * Run `npm install`
-* Run `npm test`
+* Run `npm run test` to run all tests
