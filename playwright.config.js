@@ -31,7 +31,7 @@ const config = {
     trace: 'on-first-retry',
     /* Coolect video for test */
     video: 'on',
-    headless: false
+    //headless: false
   },
 
   /* Configure projects for major browsers */

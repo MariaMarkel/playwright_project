@@ -8,9 +8,10 @@
     "test:headed": "npx playwright test --headed",
     "test:chrome": "npx playwright test --project=chromium",
     "test:debug": " npx playwright test --debug",
-    "amazonItem": "npx playwright test tests/amazonItem.spec.js --headed",
+    "amazonItem": "npx playwright test tests/amazonItem.spec.js ",
     "purchaseWorkflow": "npx playwright test tests/purchaseWorkflow.spec.js",
     "uiplayground": "npx playwright test tests/uiplayground.spec.js",
+    "demoqa": "npx playwright test tests/demoqa.spec.js",
     "sandbox": "npx playwright test tests/sandbox.spec.js --headed",
     "report": "npx playwright show-report",
     "viewTrace": "npx playwright show-trace newTrace.zip"
