@@ -1,4 +1,3 @@
-// @ts-check
 const { test, chromium, expect, Page } = require('@playwright/test');
 const  { AmazonMainPage }  = require('./../pageObjects/amazonMainPage');
 const { ProductPage } = require("../pageObjects/productPage");
@@ -22,9 +21,9 @@ test('1: go to amazon.com', async () => {
 
 test('2: search for roswear jeans', async () => {
     const amazonMainPage = new AmazonMainPage(page);
-    amazonMainPage.searchField.fill(data.jeans);
-    //amazonMainPage.searchField.press('Enter'); // why is this not working??
-    amazonMainPage.submitButton.click();
+    await amazonMainPage.searchField.fill(data.jeans);
+    await amazonMainPage.searchField.press('Enter');
+    //await amazonMainPage.submitButton.click();
 });
 
 test('3: verify the name of selected item', async () => {
