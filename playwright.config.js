@@ -26,7 +26,7 @@ const config = {
     actionTimeout: 0,
     /* Base URL to use in actions like await page.goto('/'). */
     baseURL: 'https://amazon.com',
-
+    screenshot: 'only-on-failure',
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
     /* Coolect video for test */
