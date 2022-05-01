@@ -7,3 +7,9 @@ test('test 1: dynamic ID', async ({page})  => {
     await demoQaPage.gotoAlerts();
     await page.screenshot({ path: 'test-results/pic.png' });
 });
+
+test('test 2: ', async ({page})  => {
+    const demoQaPage = new DemoQaPage(page);
+    await demoQaPage.gotoAlerts();
+    await page.screenshot({ path: 'test-results/pic.png' });
+});
