@@ -1,0 +1,182 @@
+{
+  "uid" : "e3b16bbb31102a1b",
+  "name" : "1: go to amazon.com",
+  "fullName" : "1: go to amazon.com",
+  "historyId" : "chromium purchaseWorkflow.spec.js 1: go to amazon.com",
+  "time" : {
+    "start" : 1648305827626,
+    "stop" : 1648305831788,
+    "duration" : 4162
+  },
+  "status" : "failed",
+  "statusMessage" : "C:\\Users\\maria\\WebstormProjects\\playwright_project\\tests\\purchaseWorkflow.spec.js-snapshots\\amazon-maim-chromium-win32.png is missing in snapshots, writing actual.",
+  "statusTrace" : "\n    at C:\\Users\\maria\\WebstormProjects\\playwright_project\\tests\\purchaseWorkflow.spec.js:16:37",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "C:\\Users\\maria\\WebstormProjects\\playwright_project\\tests\\purchaseWorkflow.spec.js-snapshots\\amazon-maim-chromium-win32.png is missing in snapshots, writing actual.",
+    "statusTrace" : "\n    at C:\\Users\\maria\\WebstormProjects\\playwright_project\\tests\\purchaseWorkflow.spec.js:16:37",
+    "steps" : [ {
+      "name" : "Before Hooks",
+      "time" : {
+        "start" : 1648305827627,
+        "stop" : 1648305831050,
+        "duration" : 3423
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "browserContext.newPage",
+        "time" : {
+          "start" : 1648305828958,
+          "stop" : 1648305829225,
+          "duration" : 267
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "page.goto(https://amazon.com)",
+        "time" : {
+          "start" : 1648305829228,
+          "stop" : 1648305831050,
+          "duration" : 1822
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "expect.toBe",
+      "time" : {
+        "start" : 1648305831052,
+        "stop" : 1648305831052,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "page.screenshot",
+      "time" : {
+        "start" : 1648305831053,
+        "stop" : 1648305831582,
+        "duration" : 529
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "expect.toMatchSnapshot",
+      "time" : {
+        "start" : 1648305831586,
+        "stop" : 1648305831593,
+        "duration" : 7
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "After Hooks",
+      "time" : {
+        "start" : 1648305831593,
+        "stop" : 1648305831788,
+        "duration" : 195
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "browserContext.close",
+        "time" : {
+          "start" : 1648305831598,
+          "stop" : 1648305831788,
+          "duration" : 190
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 1,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : true,
+    "attachmentsCount" : 0,
+    "stepsCount" : 8,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JavaScript"
+  }, {
+    "name" : "framework",
+    "value" : "Playwright"
+  }, {
+    "name" : "parentSuite",
+    "value" : "chromium"
+  }, {
+    "name" : "suite",
+    "value" : "purchaseWorkflow.spec.js"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "e3b16bbb31102a1b.json",
+  "parameterValues" : [ ]
+}

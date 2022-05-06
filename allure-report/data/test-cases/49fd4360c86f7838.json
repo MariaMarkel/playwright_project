@@ -1,0 +1,104 @@
+{
+  "uid" : "49fd4360c86f7838",
+  "name" : "4: verify the price of selected item",
+  "fullName" : "4: verify the price of selected item",
+  "historyId" : " amazonItem.spec.js 4: verify the price of selected item",
+  "time" : {
+    "start" : 1651801945457,
+    "stop" : 1651801950846,
+    "duration" : 5389
+  },
+  "status" : "failed",
+  "statusMessage" : "expect(received).toHaveText(expected)\n\nExpected string: \"$39.99\"\nReceived string: \"\"\nCall log:\n  - expect.toHaveText with timeout 5000ms\n  - waiting for selector \"div#corePriceDisplay_desktop_feature_div>div>span>span.a-offscreen\"\n",
+  "statusTrace" : "\n    at C:\\Users\\maria\\WebstormProjects\\playwright_project\\tests\\amazonItem.spec.js:39:44",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "expect(received).toHaveText(expected)\n\nExpected string: \"$39.99\"\nReceived string: \"\"\nCall log:\n  - expect.toHaveText with timeout 5000ms\n  - waiting for selector \"div#corePriceDisplay_desktop_feature_div>div>span>span.a-offscreen\"\n",
+    "statusTrace" : "\n    at C:\\Users\\maria\\WebstormProjects\\playwright_project\\tests\\amazonItem.spec.js:39:44",
+    "steps" : [ {
+      "name" : "Before Hooks",
+      "time" : {
+        "start" : 1651801945458,
+        "stop" : 1651801945459,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "expect.toHaveText",
+      "time" : {
+        "start" : 1651801945459,
+        "stop" : 1651801950475,
+        "duration" : 5016
+      },
+      "status" : "failed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "After Hooks",
+      "time" : {
+        "start" : 1651801950476,
+        "stop" : 1651801950847,
+        "duration" : 371
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "c7a36c7f8e5280bf",
+      "name" : "screenshot",
+      "source" : "c7a36c7f8e5280bf.png",
+      "type" : "image/png",
+      "size" : 272918
+    } ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : true,
+    "attachmentsCount" : 1,
+    "stepsCount" : 3,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JavaScript"
+  }, {
+    "name" : "framework",
+    "value" : "Playwright"
+  }, {
+    "name" : "suite",
+    "value" : "amazonItem.spec.js"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "49fd4360c86f7838.json",
+  "parameterValues" : [ ]
+}

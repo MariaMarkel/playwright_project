@@ -1,0 +1,49 @@
+{
+  "uid" : "180947875670c3cb",
+  "name" : "test 8: progress bar",
+  "fullName" : "test 8: progress bar",
+  "historyId" : " uiplayground.spec.js test 8: progress bar",
+  "time" : {
+    "start" : 1651803383123,
+    "stop" : 1651803383123,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JavaScript"
+  }, {
+    "name" : "framework",
+    "value" : "Playwright"
+  }, {
+    "name" : "suite",
+    "value" : "uiplayground.spec.js"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "8b72e34aea7365f2",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1651801667484,
+        "stop" : 1651801667484,
+        "duration" : 0
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "180947875670c3cb.json",
+  "parameterValues" : [ ]
+}

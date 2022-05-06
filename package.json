@@ -14,6 +14,8 @@
     "demoqa": "npx playwright test tests/demoqa.spec.js",
     "sandbox": "npx playwright test tests/sandbox.spec.js --headed",
     "report": "npx playwright show-report",
+    "allure:run": "npx playwright test --reporter=line,allure-playwright",
+    "allure:generate": "allure generate ./allure-results --clean && allure open ./allure-report",
     "viewTrace": "npx playwright show-trace newTrace.zip"
   },
   "author": "Maria Markel",

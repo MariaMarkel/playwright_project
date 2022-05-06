@@ -1,0 +1,39 @@
+{
+  "uid" : "d1184033316206ee",
+  "name" : "test 4: load delay",
+  "fullName" : "test 4: load delay",
+  "historyId" : " uiplayground.spec.js test 4: load delay",
+  "time" : {
+    "start" : 1651801663582,
+    "stop" : 1651801663582,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JavaScript"
+  }, {
+    "name" : "framework",
+    "value" : "Playwright"
+  }, {
+    "name" : "suite",
+    "value" : "uiplayground.spec.js"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "d1184033316206ee.json",
+  "parameterValues" : [ ]
+}

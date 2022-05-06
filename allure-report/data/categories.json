@@ -1,0 +1,111 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "C:\\Users\\maria\\WebstormProjects\\playwright_project\\tests\\purchaseWorkflow.spec.js-snapshots\\amazon-maim-chromium-win32.png is missing in snapshots, writing actual.",
+      "children" : [ {
+        "name" : "1: go to amazon.com",
+        "uid" : "e3b16bbb31102a1b",
+        "parentUid" : "7ef25d13d08750ca6369a923920cc811",
+        "status" : "failed",
+        "time" : {
+          "start" : 1648305827626,
+          "stop" : 1648305831788,
+          "duration" : 4162
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "7ef25d13d08750ca6369a923920cc811"
+    }, {
+      "name" : "expect(received).toHaveText(expected)\n\nExpected string: \"Computer\"\nReceived string: \"\"\nCall log:\n  - expect.toHaveText with timeout 5000ms\n  - waiting for selector \"#nav-search-label-id\"\n",
+      "children" : [ {
+        "name" : "2: go to all computer accessories",
+        "uid" : "2ce2bb78d2bd34a8",
+        "parentUid" : "56f29a877228047978f1e60bc00f8779",
+        "status" : "failed",
+        "time" : {
+          "start" : 1648305833149,
+          "stop" : 1648305839419,
+          "duration" : 6270
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "56f29a877228047978f1e60bc00f8779"
+    }, {
+      "name" : "locator.click: Target closed\n=========================== logs ===========================\nwaiting for selector \"ul.a-unordered-list.a-nostyle.a-vertical.a-spacing-medium>li:nth-child(6) >> nth=2\"\n============================================================",
+      "children" : [ {
+        "name" : "3: select Apple computer mouse",
+        "uid" : "1cb537f85cf2661",
+        "parentUid" : "c386c83e6ac306e5adea1d12c14f2f9d",
+        "status" : "failed",
+        "time" : {
+          "start" : 1648305840839,
+          "stop" : 1648305845030,
+          "duration" : 4191
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "c386c83e6ac306e5adea1d12c14f2f9d"
+    }, {
+      "name" : "locator.click: Target closed\n=========================== logs ===========================\nwaiting for selector \"h2 a[href*=\"Apple-Magic-Mouse-Wireless-Rechargable\"]\"\n============================================================",
+      "children" : [ {
+        "name" : "4: add Apple computer mouse to cart",
+        "uid" : "133b3691383031b7",
+        "parentUid" : "14a4974807a0ed4ba7e76c22002fc63e",
+        "status" : "failed",
+        "time" : {
+          "start" : 1648305845204,
+          "stop" : 1648305845204,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "14a4974807a0ed4ba7e76c22002fc63e"
+    }, {
+      "name" : "expect(received).toHaveText(expected)\n\nExpected string: \"$39.99\"\nReceived string: \"\"\nCall log:\n  - expect.toHaveText with timeout 5000ms\n  - waiting for selector \"div#corePriceDisplay_desktop_feature_div>div>span>span.a-offscreen\"\n",
+      "children" : [ {
+        "name" : "4: verify the price of selected item",
+        "uid" : "dea7c6c50a52718a",
+        "parentUid" : "dadec884af5026b2bb6587a68c777dcb",
+        "status" : "failed",
+        "time" : {
+          "start" : 1651803357548,
+          "stop" : 1651803363421,
+          "duration" : 5873
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "dadec884af5026b2bb6587a68c777dcb"
+    }, {
+      "name" : "expect(received).toContainText(expected)\n\nExpected string: \"roswear Women's Essentials Ripped Mid Rise Destroyed Skinny Jeans\"\nReceived string: \"\"\nCall log:\n  - expect.toContainText with timeout 5000ms\n  - waiting for selector \"#productTitle\"\n",
+      "children" : [ {
+        "name" : "testing e2e flow",
+        "uid" : "8552dd081fa9ea6f",
+        "parentUid" : "e0d536ac84a3d2e67f4764690ccd5c3f",
+        "status" : "failed",
+        "time" : {
+          "start" : 1651803359763,
+          "stop" : 1651803375762,
+          "duration" : 15999
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "e0d536ac84a3d2e67f4764690ccd5c3f"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
+}

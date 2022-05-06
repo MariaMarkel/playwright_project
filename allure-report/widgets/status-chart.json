@@ -1,0 +1,601 @@
+[ {
+  "uid" : "2ce2bb78d2bd34a8",
+  "name" : "2: go to all computer accessories",
+  "time" : {
+    "start" : 1648305833149,
+    "stop" : 1648305839419,
+    "duration" : 6270
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "41d52f6715b676ee",
+  "name" : "test 9: scrollbars",
+  "time" : {
+    "start" : 1651803383124,
+    "stop" : 1651803384369,
+    "duration" : 1245
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5b0781f1245377ca",
+  "name" : "should allow me to edit an item",
+  "time" : {
+    "start" : 1651803364428,
+    "stop" : 1651803366560,
+    "duration" : 2132
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "126eaca622e45e5",
+  "name" : "1: opacity0",
+  "time" : {
+    "start" : 1651803385871,
+    "stop" : 1651803386914,
+    "duration" : 1043
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b908fe3a1f0bbb1e",
+  "name" : "should respect the back button",
+  "time" : {
+    "start" : 1651803386162,
+    "stop" : 1651803388101,
+    "duration" : 1939
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "71ae45fe33e8bd81",
+  "name" : "2: removed button",
+  "time" : {
+    "start" : 1651803386914,
+    "stop" : 1651803388328,
+    "duration" : 1414
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d5325d4fe87434a8",
+  "name" : "should allow me to display active items",
+  "time" : {
+    "start" : 1651803384429,
+    "stop" : 1651803386162,
+    "duration" : 1733
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e7171117251a7e51",
+  "name" : "should remove the item if an empty text string was entered",
+  "time" : {
+    "start" : 1651803374122,
+    "stop" : 1651803376189,
+    "duration" : 2067
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "409627b6b5ef5e7b",
+  "name" : "should allow me to add todo items",
+  "time" : {
+    "start" : 1651803344447,
+    "stop" : 1651803349179,
+    "duration" : 4732
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e3b16bbb31102a1b",
+  "name" : "1: go to amazon.com",
+  "time" : {
+    "start" : 1648305827626,
+    "stop" : 1648305831788,
+    "duration" : 4162
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "e9f4d9387f6233a8",
+  "name" : "3: visibility hidden btn",
+  "time" : {
+    "start" : 1651803388329,
+    "stop" : 1651803389315,
+    "duration" : 986
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "80cfb01bd5a4613c",
+  "name" : "should allow me to display all items",
+  "time" : {
+    "start" : 1651803389314,
+    "stop" : 1651803390933,
+    "duration" : 1619
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "96fee225b54e69c1",
+  "name" : "test 7: click",
+  "time" : {
+    "start" : 1651803379790,
+    "stop" : 1651803383123,
+    "duration" : 3333
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "180947875670c3cb",
+  "name" : "test 8: progress bar",
+  "time" : {
+    "start" : 1651803383123,
+    "stop" : 1651803383123,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "18dbff54cfc31703",
+  "name" : "test 10: overlapped element",
+  "time" : {
+    "start" : 1651803384368,
+    "stop" : 1651803385871,
+    "duration" : 1503
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f3fbe3f0b73167a",
+  "name" : "should clear text input field when an item is added",
+  "time" : {
+    "start" : 1651803349179,
+    "stop" : 1651803350958,
+    "duration" : 1779
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "29cbfbcfbd73d883",
+  "name" : "should trim entered text",
+  "time" : {
+    "start" : 1651803372163,
+    "stop" : 1651803374122,
+    "duration" : 1959
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9502648a9ce74c46",
+  "name" : "test 2: ",
+  "time" : {
+    "start" : 1651803352745,
+    "stop" : 1651803356817,
+    "duration" : 4072
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "646f9061e1bee39c",
+  "name" : "3: select Apple computer mouse",
+  "time" : {
+    "start" : 1651803365792,
+    "stop" : 1651803380604,
+    "duration" : 14812
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4f3272d4623be742",
+  "name" : "should display the current number of todo items",
+  "time" : {
+    "start" : 1651803377826,
+    "stop" : 1651803379257,
+    "duration" : 1431
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "dea7c6c50a52718a",
+  "name" : "4: verify the price of selected item",
+  "time" : {
+    "start" : 1651803357548,
+    "stop" : 1651803363421,
+    "duration" : 5873
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "a29cc9dbe109ecef",
+  "name" : "should show #main and #footer when items added",
+  "time" : {
+    "start" : 1651803353504,
+    "stop" : 1651803355413,
+    "duration" : 1909
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b9433d7d33177782",
+  "name" : "2: search for roswear jeans",
+  "time" : {
+    "start" : 1651803350932,
+    "stop" : 1651803353611,
+    "duration" : 2679
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a0978d05cdcb4ccd",
+  "name" : "should persist its data",
+  "time" : {
+    "start" : 1651803383225,
+    "stop" : 1651803384428,
+    "duration" : 1203
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5a8b3a8337c64bb5",
+  "name" : "4: add Apple computer mouse to cart",
+  "time" : {
+    "start" : 1651803380604,
+    "stop" : 1651803394446,
+    "duration" : 13842
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2bb27ec64f0167c9",
+  "name" : "test 1: dynamic ID",
+  "time" : {
+    "start" : 1651803368013,
+    "stop" : 1651803374868,
+    "duration" : 6855
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f8a64741db634b4c",
+  "name" : "should allow me to display completed items",
+  "time" : {
+    "start" : 1651803388101,
+    "stop" : 1651803389314,
+    "duration" : 1213
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2be40a58434b6e7d",
+  "name" : "test 4: load delay",
+  "time" : {
+    "start" : 1651803378420,
+    "stop" : 1651803378420,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "fc2c604bacd2210c",
+  "name" : "should allow me to mark all items as completed",
+  "time" : {
+    "start" : 1651803355414,
+    "stop" : 1651803356723,
+    "duration" : 1309
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1004f25d0b1ae24",
+  "name" : "3: verify the name of selected item",
+  "time" : {
+    "start" : 1651803353611,
+    "stop" : 1651803357548,
+    "duration" : 3937
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4498b391524eb97e",
+  "name" : "should allow me to mark items as complete",
+  "time" : {
+    "start" : 1651803359886,
+    "stop" : 1651803362350,
+    "duration" : 2464
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c050cc224addd952",
+  "name" : "test 13: verify text",
+  "time" : {
+    "start" : 1651803394593,
+    "stop" : 1651803395414,
+    "duration" : 821
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c2a5c63e7657b9f3",
+  "name" : "test 2: class attribute",
+  "time" : {
+    "start" : 1651803374867,
+    "stop" : 1651803376800,
+    "duration" : 1933
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8552dd081fa9ea6f",
+  "name" : "testing e2e flow",
+  "time" : {
+    "start" : 1651803359763,
+    "stop" : 1651803375762,
+    "duration" : 15999
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "93f252fe765c30d",
+  "name" : "should save edits on blur",
+  "time" : {
+    "start" : 1651803369879,
+    "stop" : 1651803372162,
+    "duration" : 2283
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9104f06136d1d9b2",
+  "name" : "6: overlapped btn",
+  "time" : {
+    "start" : 1651803391627,
+    "stop" : 1651803392672,
+    "duration" : 1045
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b16c598def066909",
+  "name" : "should display the correct text",
+  "time" : {
+    "start" : 1651803379257,
+    "stop" : 1651803380734,
+    "duration" : 1477
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "648f2f0788c888f3",
+  "name" : "1: go to amazon.com",
+  "time" : {
+    "start" : 1651803350475,
+    "stop" : 1651803350932,
+    "duration" : 457
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e126d980d337f63f",
+  "name" : "should remove completed items when clicked",
+  "time" : {
+    "start" : 1651803380734,
+    "stop" : 1651803382009,
+    "duration" : 1275
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "66386c3b6ecb2235",
+  "name" : "should allow me to clear the complete state of all items",
+  "time" : {
+    "start" : 1651803356723,
+    "stop" : 1651803358135,
+    "duration" : 1412
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1cb537f85cf2661",
+  "name" : "3: select Apple computer mouse",
+  "time" : {
+    "start" : 1648305840839,
+    "stop" : 1648305845030,
+    "duration" : 4191
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "cf6652e41c0980e",
+  "name" : "test 1: dynamic ID",
+  "time" : {
+    "start" : 1651803344450,
+    "stop" : 1651803352745,
+    "duration" : 8295
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "80574f42ba82961",
+  "name" : "5: display none btn",
+  "time" : {
+    "start" : 1651803390466,
+    "stop" : 1651803391627,
+    "duration" : 1161
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "653b97a56b147702",
+  "name" : "test 5: client delay",
+  "time" : {
+    "start" : 1651803378421,
+    "stop" : 1651803378421,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "4645057173e7790c",
+  "name" : "2: go to all computer accessories",
+  "time" : {
+    "start" : 1651803354715,
+    "stop" : 1651803365792,
+    "duration" : 11077
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2db6444ab21918f1",
+  "name" : "should be hidden when there are no items that are completed",
+  "time" : {
+    "start" : 1651803382009,
+    "stop" : 1651803383225,
+    "duration" : 1216
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5c8b6b801333fde2",
+  "name" : "should highlight the currently applied filter",
+  "time" : {
+    "start" : 1651803390933,
+    "stop" : 1651803392265,
+    "duration" : 1332
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "231750200af543a2",
+  "name" : "test 12: sample app",
+  "time" : {
+    "start" : 1651803393597,
+    "stop" : 1651803394594,
+    "duration" : 997
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4a6b804220c4fae4",
+  "name" : "test 6: dynamic table",
+  "time" : {
+    "start" : 1651803378421,
+    "stop" : 1651803379791,
+    "duration" : 1370
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "883f7f5bc65e39b9",
+  "name" : "should cancel edits on escape",
+  "time" : {
+    "start" : 1651803376189,
+    "stop" : 1651803377826,
+    "duration" : 1637
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "350c115cdd1211e4",
+  "name" : "test 3: hidden layers",
+  "time" : {
+    "start" : 1651803376800,
+    "stop" : 1651803378420,
+    "duration" : 1620
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2033af3515daab9b",
+  "name" : "complete all checkbox should update state when items are completed / cleared",
+  "time" : {
+    "start" : 1651803358136,
+    "stop" : 1651803359886,
+    "duration" : 1750
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f80668e3ac020e13",
+  "name" : "should append new items to the bottom of the list",
+  "time" : {
+    "start" : 1651803350958,
+    "stop" : 1651803353505,
+    "duration" : 2547
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "87b5fcaa6956e9eb",
+  "name" : "1: go to amazon.com",
+  "time" : {
+    "start" : 1651803347724,
+    "stop" : 1651803354714,
+    "duration" : 6990
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "81eba347e3fc8093",
+  "name" : "7: offscreen btn",
+  "time" : {
+    "start" : 1651803392671,
+    "stop" : 1651803393596,
+    "duration" : 925
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f4fd512711e3ea0c",
+  "name" : "4: zero width btn",
+  "time" : {
+    "start" : 1651803389315,
+    "stop" : 1651803390466,
+    "duration" : 1151
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "133b3691383031b7",
+  "name" : "4: add Apple computer mouse to cart",
+  "time" : {
+    "start" : 1648305845204,
+    "stop" : 1648305845204,
+    "duration" : 0
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "8203ce32ef8c787c",
+  "name" : "should hide other controls when editing",
+  "time" : {
+    "start" : 1651803366560,
+    "stop" : 1651803369879,
+    "duration" : 3319
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8142922aa5af0469",
+  "name" : "should allow me to un-mark items as complete",
+  "time" : {
+    "start" : 1651803362350,
+    "stop" : 1651803364429,
+    "duration" : 2079
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "408ddbc9ecc0cc64",
+  "name" : "0: go to amazon.com",
+  "time" : {
+    "start" : 1651803350461,
+    "stop" : 1651803350475,
+    "duration" : 14
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

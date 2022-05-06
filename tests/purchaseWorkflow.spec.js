@@ -31,7 +31,7 @@ test('3: select Apple computer mouse', async ({ page }) => {
     const productPage = new ProductPage(page);
     await amazonMainPage.gotoComputerAccessoriesPage(0, 4);
     await productPage.selectMagicMouse(page);
-    expect(productPage.addToCartButton).toBeVisible;
+    await expect(productPage.addToCartButton).toBeVisible;
 });
 
 test('4: add Apple computer mouse to cart', async ({ page }) => {
@@ -41,7 +41,7 @@ test('4: add Apple computer mouse to cart', async ({ page }) => {
     await productPage.selectMagicMouse(page);
     //productPage.addToCart(); // why is this not working?
     await productPage.addToCartButton.click();
-    expect(productPage.addedToCartNotification).toBeVisible;
+    await expect(productPage.addedToCartNotification).toBeVisible;
 });
 
 test.afterAll(async () => {
